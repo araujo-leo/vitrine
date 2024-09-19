@@ -71,6 +71,6 @@ class ProdutosController{
         $categoriaProduto = 2;         
         $descricaoProduto = 'camiseta do marcos 1323'; 
         $preco = 45.99;  
-        $quantidadeEstoque = 14;  
+        $quantidadeEstoque = 14;   
     }
 }
