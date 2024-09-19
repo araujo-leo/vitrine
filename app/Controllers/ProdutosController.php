@@ -71,6 +71,29 @@ class ProdutosController{
         $categoriaProduto = 2;         
         $descricaoProduto = 'camiseta do marcos 1323'; 
         $preco = 45.99;  
-        $quantidadeEstoque = 14;   
+        $quantidadeEstoque = 14;    
+
+        $isModified = false;
+
+        if($produto['nome_produto'] != $nomeProduto){
+            $isModified = true;
+        }
+        if($produto['categoria_produto'] != $categoriaProduto){
+            $isModified = true;
+        }
+        if($produto ['descricao_produto'] != $descricaoProduto){
+            $isModified = true;
+        }
+        if($produto['preco'] != $preco){
+            $isModified = true;
+        }
+        if($produto['quantidade_estoque']){
+            $isModified = true;
+        }
+
+        if($isModified == true ){
+            echo "modificado";
+            die();
+        }
     }
 }
