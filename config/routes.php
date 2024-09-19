@@ -10,6 +10,7 @@ $routes = [
     'update_tipo_usuario' => 'AdminController@updateTipoUsuario',
     'admin/formulario_create_produto' => 'ProdutosController@formProduto',
     'admin/create_produto' => 'ProdutosController@createProduto',
+    'admin/edit_produto' => 'ProdutosController@editProduto',   
     'produtos' => 'ProdutosController@index',
     'produtos/infantil' => 'ProdutosController@exibirInfantil',
     'produtos/masculino' => 'ProdutosController@exibirMasculino',

@@ -55,4 +55,22 @@ class ProdutosController{
             exit();
         }
     }
+
+    public function editProduto(){
+        $idProduto = 10;
+        $produtos = $this->ProdutosModel->index();
+        $produto;
+        foreach($produtos as $p){
+            if($p['id'] == $idProduto){
+                $produto = $p;
+                break;
+            }   
+        }
+
+        $nomeProduto = "Camiseta marcos teste"; 
+        $categoriaProduto = 2;         
+        $descricaoProduto = 'camiseta do marcos 1323'; 
+        $preco = 45.99;  
+        $quantidadeEstoque = 14;  
+    }
 }
