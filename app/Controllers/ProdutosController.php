@@ -96,4 +96,15 @@ class ProdutosController{
             die();
         }
     }
+
+    public function deleteProduto(){
+        if(isset($_SESSION['usuario']['tipo_usuario']) && $_SESSION['usuario']['tipo_usuario'] != 1){
+            $idProduto = 2;
+            $this->ProdutosModel->deleteProduto($idProduto);   
+        }else{
+            header('Location: ../');
+            exit();
+        }
+
+    }
 }

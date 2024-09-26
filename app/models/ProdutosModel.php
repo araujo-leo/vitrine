@@ -60,4 +60,8 @@ class ProdutosModel{
             echo "Erro ao cadastrar o produto: " . $stmt->error;
         }
     }
-}
+
+    public static function deleteProduto(){
+        
+    }
+}   

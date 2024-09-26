@@ -11,6 +11,7 @@ $routes = [
     'admin/formulario_create_produto' => 'ProdutosController@formProduto',
     'admin/create_produto' => 'ProdutosController@createProduto',
     'admin/edit_produto' => 'ProdutosController@editProduto',   
+    'admin/delete_produto' => 'ProdutosController@deleteProduto',
     'produtos' => 'ProdutosController@index',
     'produtos/infantil' => 'ProdutosController@exibirInfantil',
     'produtos/masculino' => 'ProdutosController@exibirMasculino',
