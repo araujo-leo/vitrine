@@ -99,7 +99,7 @@ class ProdutosController{
 
     public function deleteProduto(){
         if(isset($_SESSION['usuario']['tipo_usuario']) && $_SESSION['usuario']['tipo_usuario'] != 1){
-            $idProduto = 2;
+            $idProduto = 11;
             $this->ProdutosModel->deleteProduto($idProduto);   
         }else{
             header('Location: ../');
