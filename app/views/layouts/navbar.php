@@ -11,16 +11,12 @@
 
     <nav class="navbar">
         <div class="teste">
-            <a href="Condomínios">Condomínios</a>
-            <a href="#Fórum">Fórum</a>
-            <a href="Guia">Guia</a>
-            <a href="#Artigos">Artigos</a>
-            <a href="#Ferramentas">Ferramentas</a>
+            <a href="produtos">Produtos</a>
         </div>
         <div class="2">
-            <a href="#Cotar Imóvel">Cotar Imóvel</a>
-            <a href="#Planos">Planos</a>
-            <a href="#entrar">Entrar</a>
+            <a href="masculino">Maculino</a>
+            <a href="feminino">Feminino</a>
+            <a href="infantil">Infantil</a>
             <a href="#cadastre-se" id="cadastrar-btn">CADASTRE-SE</a>
         </div>
     </nav>
