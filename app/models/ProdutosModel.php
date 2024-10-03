@@ -60,20 +60,4 @@ class ProdutosModel{
             echo "Erro ao cadastrar o produto: " . $stmt->error;
         }
     }
-
-    public static function deleteProduto($idProduto){
-        require '../config/conexao.php';
-
-        $sql = "DELETE FROM produtos where id = ?";
-
-        $stmt = $conn->prepare($sql);
-        $stmt->bind_param("i", $idProduto);
-
-        if($stmt->execute()){
-            echo "Produto deletado";
-        }else{
-            echo "Erro ao cadastrar o produto: " . $stmt->error;    
-        }
-
-    }
-}   
+}
