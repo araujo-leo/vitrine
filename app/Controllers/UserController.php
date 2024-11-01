@@ -14,7 +14,7 @@ class UserController {
     public function cadastrar() {
     
 
-      /*   if (!isset($_SESSION['login'])) { */
+        if (!isset($_SESSION['login'])) {
             include_once '../app/views/auth/cadastro.php';
             if (isset($_GET['formulario_cadastro_enviado']) && $_GET['formulario_cadastro_enviado'] === 'true') {
                 $dadosCadastro = [
@@ -29,9 +29,9 @@ class UserController {
                     echo 'Erro ao processar o cadastro: ' . $e->getMessage(); 
                 }            
             }
-        /* } else {
+        } else {
             header('Location: ../public/');
-        } */
+        }
     }
 
     private function processarCadastro($dadosCadastro) {
@@ -39,8 +39,8 @@ class UserController {
     }
 
     public function login() {
-/*         if (!isset($_SESSION['login'])) {
- */            include_once '../app/views/auth/login.php';
+        if (!isset($_SESSION['login'])) {
+            include_once '../app/views/auth/login.php';
             if (isset($_GET['formulario_login_enviado']) && $_GET['formulario_login_enviado'] === 'true') {
                 $dadosLogin = [
                     'email' => $_POST['email'],
@@ -53,9 +53,9 @@ class UserController {
                     echo 'Erro ao processar o cadastro: ' . $e->getMessage(); 
                 }            
             }
-        /* } else {
+        } else {
             header('Location: ../public/');
-        } */
+        }
     }
 
     private function processarLogin($dadosLogin) {
