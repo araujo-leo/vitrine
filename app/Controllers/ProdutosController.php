@@ -30,6 +30,8 @@ class ProdutosController{
     }
 
     public function formProduto(){ 
+        $idProduto = $_GET['id'];
+        $produtos = $this->ProdutosModel->index();
         include "../app/views/admin/formulario_produto.php";
     }
 
@@ -57,7 +59,7 @@ class ProdutosController{
     }
 
     public function editProduto(){
-        $idProduto = 10;
+        $idProduto = $_GET['id'];
         $produtos = $this->ProdutosModel->index();
         $produto;
         foreach($produtos as $p){
@@ -99,9 +101,10 @@ class ProdutosController{
 
     public function deleteProduto(){
         if(isset($_SESSION['usuario']['tipo_usuario']) && $_SESSION['usuario']['tipo_usuario'] != 1){
-            $idProduto = 11;
-            $this->ProdutosModel->deleteProduto($idProduto);   
-        }else{
+            $idProduto = $_GET['id'];
+            var_dump($idProduto);
+/*             $this->ProdutosModel->deleteProduto($idProduto);   
+ */        }else{
             header('Location: ../');
             exit();
         }

@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../views/assets/css/style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
 
 <header class="header">
